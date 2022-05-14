@@ -1,3 +1,11 @@
 header.header
-	.site-container
-		h1 header
+  .site-container.header__container
+    a(href="/" class="header__logo-link")
+      +icon-mono("logo")(class="header__logo" width="125" height="32")
+  .header__btns
+    button.button-reset.button.header__btn
+      | Личный кабинет
+    button.button-reset.burger-button
+      span
+      span
+      span

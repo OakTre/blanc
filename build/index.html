@@ -11,22 +11,108 @@
   <body class="page-home">
     <div class="page-wrapper">
       <header class="header">
-        <div class="site-container">
-          <h1>header</h1>
+        <div class="site-container header__container"><a class="header__logo-link" href="/">
+            <svg class="icon icon-logo header__logo" width="125" height="32">
+              <use xlink:href="images/sprites/sprite-mono.svg#logo"></use>
+            </svg></a></div>
+        <div class="header__btns">
+          <button class="button-reset button header__btn">Личный кабинет</button>
+          <button class="button-reset burger-button"><span></span><span></span><span></span></button>
         </div>
       </header>
       <main class="page-main main">
-        <section class="hero">
-          <div class="site-container">
-            <h1>Hero Heading</h1>
+        <section class="section site-container">
+          <div class="content-container">
+            <h1 class="content-container__heading">Всё для клиентов VestaBank</h1>
+            <ul class="accordion__list">
+              <li class="accordion js-accordion">
+                <button class="accordion__btn button-reset js-accordion-btn"><span class="accordion__name">Документы и тарифы</span>
+                  <svg class="icon icon-shevron-down accordion__icon" width="24" height="24">
+                    <use xlink:href="images/sprites/sprite-mono.svg#shevron-down"></use>
+                  </svg>
+                </button>
+                <div class="js-accordion-body-wrapper accordion-body-wrapper">
+                  <div class="accordion__body">
+                    <div class="content-body js-tab-container">
+                      <div class="tabs__nav">
+                        <button class="button-reset tab__btn is-active js-tab-btn">Физ. лица</button>
+                        <button class="button-reset tab__btn js-tab-btn">Юр. лица</button>
+                      </div>
+                      <ul class="file__list tab__content is-active js-tab-content">
+                        <li class="file__item"><a class="file" href="/" target="_blank">
+                            <svg class="icon icon-file file__icon" width="28" height="36">
+                              <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
+                            </svg>
+                            <div class="file__info"><span class="file__info-name">Правила комплексного обслуживания физических лиц </span><span class="file__info-caption">Вступил в силу 25.12.2020</span></div></a>
+                        </li>
+                      </ul>
+                      <ul class="file__list tab__content js-tab-content">
+                        <li class="file__item"><a class="file" href="/" target="_blank">
+                            <svg class="icon icon-file file__icon" width="28" height="36">
+                              <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
+                            </svg>
+                            <div class="file__info"><span class="file__info-name">Правила комплексного обслуживания физических лиц </span><span class="file__info-caption">Вступил в силу 25.12.2020</span></div></a>
+                        </li>
+                        <li class="file__item"><a class="file" href="/" target="_blank">
+                            <svg class="icon icon-file file__icon" width="28" height="36">
+                              <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
+                            </svg>
+                            <div class="file__info"><span class="file__info-name">Правила комплексного обслуживания физических лиц </span><span class="file__info-caption">Вступил в силу 25.12.2020</span></div></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion js-accordion">
+                <button class="accordion__btn button-reset js-accordion-btn"><span class="accordion__name">Интернет-банк</span>
+                  <svg class="icon icon-shevron-down accordion__icon" width="24" height="24">
+                    <use xlink:href="images/sprites/sprite-mono.svg#shevron-down"></use>
+                  </svg>
+                </button>
+                <div class="accordion-body-wrapper js-accordion-body-wrapper">
+                  <div class="accordion__body">
+                    <div class="content-body">
+                      <button class="button-secondary button-reset">Войти в кабинет</button>
+                      <ul class="file__list">
+                        <li class="file__item"><a class="file" href="/" target="_blank">
+                            <svg class="icon icon-file file__icon" width="28" height="36">
+                              <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
+                            </svg>
+                            <div class="file__info"><span class="file__info-name">Правила комплексного обслуживания физических лиц </span><span class="file__info-caption">Вступил в силу 25.12.2020</span></div></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion js-accordion">
+                <button class="accordion__btn button-reset js-accordion-btn"><span class="accordion__name">Обмен валюты</span>
+                  <svg class="icon icon-shevron-down accordion__icon" width="24" height="24">
+                    <use xlink:href="images/sprites/sprite-mono.svg#shevron-down"></use>
+                  </svg>
+                </button>
+                <div class="accordion-body-wrapper js-accordion-body-wrapper">
+                  <div class="accordion__body">
+                    <div class="content-body">
+                      <p>У клиентов банка есть возможность осуществлять безналичный обмен валют, используя сервис «Обмен Валюты онлайн» в&nbsp;личном кабинете</p>
+                      <ul class="file__list">
+                        <li class="file__item"><a class="file" href="/" target="_blank">
+                            <svg class="icon icon-file file__icon" width="28" height="36">
+                              <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
+                            </svg>
+                            <div class="file__info"><span class="file__info-name">Правила комплексного обслуживания физических лиц </span><span class="file__info-caption">Вступил в силу 25.12.2020</span></div></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <div class="site-container">
-          <h1>footer</h1>
-        </div>
-      </footer>
+      <footer class="footer"></footer>
     </div>
   </body>
   <script src="js/main.js?v=0.0.0.0"></script>

@@ -1,3 +1,55 @@
 .header {
-  //
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  height: var(--header-height);
+  background-color: var(--color-bg);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+
+    @include mq(sm) {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 12.5rem;
+    height: 3.2rem;
+
+    @include mq(sm) {
+      width: 10.9rem;
+      height: 2.8rem;
+    }
+  }
+
+  &__btns {
+    margin-left: auto;
+    margin-right: 3.2rem;
+    display: flex;
+    flex-shrink: 0;
+
+    @include mq(md) {
+      margin-right: 12px;
+    }
+  }
+
+  &__btn {
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+
+    @include mq(lg) {
+      display: none;
+    }
+  }
 }

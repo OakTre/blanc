@@ -16,6 +16,9 @@
   --font-text-L: 400 2.4rem/3rem var(--main-ff);
   --font-text-M: 400 1.6rem/2.4rem var(--main-ff);
   --font-text-btn: 400 1.8rem/2.4rem var(--main-ff);
+
+  --header-height: 10.4rem;
+  --transition: 200ms;
 }
 
 @import "./helpers/media";
@@ -23,3 +26,10 @@
 @import "./settings/settings";
 @import "./blocks/blocks";
 @import './pages/pages';
+
+
+@include mq(sm) {
+  :root {
+    --header-height: 5.9rem;
+  }
+}

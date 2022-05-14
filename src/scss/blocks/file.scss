@@ -1,0 +1,52 @@
+.file {
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 0.6rem 0.8rem;
+
+  &__icon {
+    display: block;
+    width: 2.8rem;
+    height: 3.6rem;
+    fill: none;
+    stroke: var(--color-base-dark);
+    margin-right: 1rem;
+    flex-shrink: 0;
+
+    @include mq(sm) {
+      margin-right: 1.4rem;
+    }
+  }
+
+  &__info-name {
+    display: block;
+    color: var(--color-base-dark);
+    line-height: 2.1rem;
+  }
+
+  &__info-caption {
+    display: block;
+    color: var(--color-base-grey);
+    line-height: 1.4rem;
+
+    @include mq(sm) {
+      line-height: 2.1rem;
+    }
+  }
+}

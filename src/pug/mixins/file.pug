@@ -1,0 +1,6 @@
+mixin file(name, caption, url)
+  a.file(href=url target="_blank")
+    +icon-mono("file")(class="file__icon" width="28" height="36")
+    .file__info
+      span.file__info-name!= name
+      span.file__info-caption!= caption

@@ -1,0 +1,47 @@
+section.section.site-container
+  .content-container
+    h1.content-container__heading Всё для клиентов VestaBank
+    ul.accordion__list
+      li.accordion.js-accordion
+        button.accordion__btn.button-reset.js-accordion-btn
+          span.accordion__name Документы и тарифы
+          +icon-mono("shevron-down")(class="accordion__icon" width="24" height="24")
+        .js-accordion-body-wrapper.accordion-body-wrapper
+          .accordion__body
+            .content-body.js-tab-container
+              .tabs__nav
+                button.button-reset.tab__btn.is-active.js-tab-btn Физ. лица
+                button.button-reset.tab__btn.js-tab-btn Юр. лица
+              ul.file__list.tab__content.is-active.js-tab-content
+                li.file__item
+                  +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+              ul.file__list.tab__content.js-tab-content
+                li.file__item
+                  +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+                li.file__item
+                  +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+
+      li.accordion.js-accordion
+        button.accordion__btn.button-reset.js-accordion-btn
+          span.accordion__name Интернет-банк
+          +icon-mono("shevron-down")(class="accordion__icon" width="24" height="24")
+        .accordion-body-wrapper.js-accordion-body-wrapper
+          .accordion__body
+            .content-body
+              button.button-secondary.button-reset Войти в кабинет
+              ul.file__list
+                li.file__item
+                  +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+
+      li.accordion.js-accordion
+        button.accordion__btn.button-reset.js-accordion-btn
+          span.accordion__name Обмен валюты
+          +icon-mono("shevron-down")(class="accordion__icon" width="24" height="24")
+        .accordion-body-wrapper.js-accordion-body-wrapper
+          .accordion__body
+            .content-body
+              p
+                | У клиентов банка есть возможность осуществлять безналичный обмен валют, используя сервис «Обмен Валюты онлайн» в&nbsp;личном кабинете
+              ul.file__list
+                li.file__item
+                  +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
