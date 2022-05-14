@@ -1,0 +1,25 @@
+:root {
+	// colors
+	--color-base-dark: #222222;
+	--color-base-grey: #888888;
+	--color-white: #fff;
+	--color-page-bg: #E5E5E5;
+  --color-bg: #F3F3F3;
+  --color-error: #FF5566;
+  --border-color: #CCCCCC;
+  --box-shadow: 0px 5px 25px rgba(54, 27, 97, 0.08);
+
+  // Typography
+	--main-ff: "Aeroport", sans-serif;
+  --font-text-XL: 400 3.6rem/3.9rem var(--main-ff);
+  --font-text-XL-bold: 700 3.6rem/3.9rem var(--main-ff);
+  --font-text-L: 400 2.4rem/3rem var(--main-ff);
+  --font-text-M: 400 1.6rem/2.4rem var(--main-ff);
+  --font-text-btn: 400 1.8rem/2.4rem var(--main-ff);
+}
+
+@import "./helpers/media";
+@import './vendor/vendor';
+@import "./settings/settings";
+@import "./blocks/blocks";
+@import './pages/pages';

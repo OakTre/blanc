@@ -1,0 +1,95 @@
+@import "fonts";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+body {
+	color: var(--color-base-dark);
+  font: var(--font-text-M);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-rest {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+}
+
+.site-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  @include mq(custom, min, 768) {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  @include mq(custom, min, 1200) {
+    max-width: 1640px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  @include mq(custom, min, 1800) {
+    max-width: 1960px;
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.page-main {
+	flex-grow: 1;
+}
+
+.button-reset {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  font-family: var(--main-ff);
+}
+
+.js-focus-visible button:focus:not(.focus-visible) {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
