@@ -3,6 +3,11 @@
 ## Ссылки
 
 1. [Всё для клиентов](https://oaktre.github.io/blanc/build/)
+2. [Отчётность](https://oaktre.github.io/blanc/build/report.html)
+3. [Раскрытие инф. для регулятивных целей](https://oaktre.github.io/blanc/build/disclosure.html)
+4. [Информация о процентных ставках по договорам банковского вклада с физическими лицами](https://oaktre.github.io/blanc/build/interest-rates.html)
+5. [Лицензии и членства в ассоциациях](https://oaktre.github.io/blanc/build/licenses.html)
+
 
 
 ## Список команд
