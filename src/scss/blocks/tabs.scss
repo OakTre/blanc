@@ -39,3 +39,41 @@
     }
   }
 }
+
+.tabs-mobile {
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: auto;
+    margin-right: -2rem;
+    margin-left: -2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}
+
+.tab-mobile {
+  flex-shrink: 0;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1.2rem;
+  background-color: var(--color-bg);
+  transition: background-color var(--transition), color var(--transition);
+
+  &.is-active {
+    background-color: var(--color-base-dark);
+    color: var(--color-white);
+  }
+
+  &__content {
+    &:not(.is-active) {
+      display: none;
+    }
+  }
+}

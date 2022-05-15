@@ -25,15 +25,141 @@
   border-radius: 2.4rem;
   box-shadow: var(--box-shadow);
 
-  p {
+  &.mod-mobile-transparent {
+    @include mq(sm) {
+      background-color: transparent;
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+
+  h2 {
+    font: var(--font-text-L);
+    margin-top: 3.2rem;
     margin-bottom: 3.2rem;
+
+    &:nth-of-type(1) {
+      margin-top: 0;
+    }
+
+    @include mq(sm) {
+      margin-top: 0;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  a:not(.file) {
+    display: inline-block;
+    line-height: 1.9rem;
+
+    & + ul {
+      margin-top: 3.2rem;
+    }
+  }
+
+  ul:not(.file__list) {
+    li:not(.file__item) {
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--color-bg);
+
+      @include mq(sm) {
+        margin-bottom: 1.6rem;
+        padding-bottom: 1.6rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+
+      span {
+        color: var(--color-base-grey);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 1.6rem;
+
+    b, strong {
+      font-weight: 700;
+    }
+
+    span {
+      display: block;
+      color: var(--color-base-grey) !important;
+    }
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 3.2rem;
+      margin-top: 0;
+
+      @include mq(sm) {
+        margin-bottom: 1.2rem;
+      }
+    }
 
     @include mq(sm) {
       margin-bottom: 1.2rem;
     }
   }
 
+  table {
+    tr {
+      display: flex;
+      gap: 2rem;
+
+      @include mq(sm) {
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+    }
+
+    td {
+      width: 50%;
+
+      @include mq(sm) {
+        width: 100%;
+      }
+
+      a {
+        display: block;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 1.2rem;
+
+        @include mq(sm) {
+          margin-bottom: 1.6rem;
+          padding-bottom: 1.6rem;
+          border-bottom: 1px solid var(--color-bg);
+
+          &:nth-last-of-type(1) {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border: none;
+          }
+        }
+
+        span {
+          color: var(--color-base-grey);
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
   @include mq(sm) {
     padding: 2rem;
+    border-radius: 1.2rem;
   }
 }

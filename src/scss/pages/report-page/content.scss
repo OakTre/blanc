@@ -1,0 +1,20 @@
+.report-page {
+  &__mobile-container {
+    margin-bottom: 1.6rem;
+
+    @include mq(sm, min) {
+      display: none;
+    }
+  }
+
+  &__small-legend {
+    display: block;
+    font: var(--font-text-M);
+    color: var(--color-base-grey);
+    margin-bottom: 0.4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

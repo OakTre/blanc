@@ -1,0 +1,150 @@
+main.page-main.main
+  section.section.site-container.disclosure-page
+    .content-container
+      h1.content-container__heading Лицензии и членство в ассоциациях
+      .content-body.js-tab-container.mod-mobile-transparent
+        ._desctop
+          .tabs__nav
+            button.button-reset.tab__btn.is-active.js-tab-btn Лицензии
+            button.button-reset.tab__btn.js-tab-btn Членства
+        .tab__content.is-active.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Базовая лицензия
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                a(href="/")
+                  | Базовая лицензия Банка России на осуществление банковских операций со средствами в рублях и иностранной валюте (с правом привлечения во вклады денежных средств физических лиц) без права на осуществления банковских операций с драгоценными металлами №2368 от 06.07.2021 г.
+                ul
+                  li
+                    span
+                      | Привлечение денежных средств физических и юридических лиц во вклады (до востребования и на определенный срок)
+                  li
+                    span
+                      | Размещение привлеченных во вклады (до востребования и на определенный срок) денежных средств физических и юридических лиц от своего имени и за свой счет
+                  li
+                    span
+                      | Осуществление переводов денежных средств по поручению физических и юридических лиц, в том числе банков-корреспондентов, по их банковским счетам
+                  li
+                    span
+                      | Инкассация денежных средств, векселей, платежных и расчетных документов и кассовое обслуживание физических и юридических лиц
+                  li
+                    span
+                      | Купля-продажа иностранной валюты в наличной и безналичной формах
+                  li
+                    span
+                      | Осуществление переводов денежных средств без открытия банковских счетов, в том числе электронных денежных средств (за исключением почтовых переводов)
+
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Лицензии федерального органа исполнительной власти по рынку ценных бумаг
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                ul
+                  li
+                    a(href="/")
+                      | Привлечение денежных средств физических и юридических лиц во вклады (до востребования и на определенный срок)
+                  li
+                    a(href="/")
+                      | Размещение привлеченных во вклады (до востребования и на определенный срок) денежных средств физических и юридических лиц от своего имени и за свой счет
+                  li
+                    a(href="/")
+                      | Осуществление переводов денежных средств по поручению физических и юридических лиц, в том числе банков-корреспондентов, по их банковским счетам
+                  li
+                    a(href="/")
+                      | Инкассация денежных средств, векселей, платежных и расчетных документов и кассовое обслуживание физических и юридических лиц
+                  li
+                    a(href="/")
+                      | Купля-продажа иностранной валюты в наличной и безналичной формах
+                  li
+                    a(href="/")
+                      | Осуществление переводов денежных средств без открытия банковских счетов, в том числе электронных денежных средств (за исключением почтовых переводов)
+
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Лицензии Федеральной службы безопасности Российской Федерации на осуществление деятельности в области защиты информации
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      a(href="/")
+                        | Лицензия на осуществление дилерской деятельности № 077-09969-010000 от 13.02.2007 г. без ограничения срока действия
+                    td
+                      p
+                        span
+                          | Разработка, производство, распространение шифровальных (криптографических) средств, информационных систем и телекоммуникационных систем, защищенных с использованием шифровальных (криптографических) средств
+                      p
+                        span
+                          | Выполнение работ, оказание услуг в области шифрования информации, технического обслуживания шифровальных (криптографических) средств, информационных систем и телекоммуникационных систем, защищенных с использованием шифровальных (криптографических) средств (за исключением случая, если техническое обслуживание шифровальных (криптографических) средств информационных систем и телекоммуникационных систем, защищенных с использованием шифровальных (криптографических) средств, осуществляется для обеспечения собственных нужд юридического лица или индивидуального предпринимателя)
+
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Документы
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                ul.file__list
+                  - for (let i = 0; i<2; i++)
+                    li.file__item
+                      +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+          .mobile-accordion.js-accordion-mobile._mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Членство в ассоциациях и организациях
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                ul
+                  li
+                    a(href="/")
+                      | Член секций Московской межбанковской валютной биржи ММВБ
+                  li
+                    a(href="/")
+                      | Участник Российской торговой системы РТС
+                  li
+                    a(href="/")
+                      | Участник Системы обязательного страхования вкладов
+                  li
+                    a(href="/")
+                      | Участник системы S. W. I. F. T.
+                  li
+                    a(href="/")
+                      | Саморегулируемая организация «Национальная финансовая ассоциация»
+                  li
+                    a(href="/")
+                      | Участник системы Reuters
+                  li
+                    a(href="/")
+                      | Ассоциированный участник международных платежных систем VISA International и MasterCard Worldwide
+        .tab__content.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Членство в ассоциациях и организациях
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                ul
+                  li
+                    a(href="/")
+                      | Член секций Московской межбанковской валютной биржи ММВБ
+                  li
+                    a(href="/")
+                      | Участник Российской торговой системы РТС
+                  li
+                    a(href="/")
+                      | Участник Системы обязательного страхования вкладов
+                  li
+                    a(href="/")
+                      | Участник системы S. W. I. F. T.
+                  li
+                    a(href="/")
+                      | Саморегулируемая организация «Национальная финансовая ассоциация»
+                  li
+                    a(href="/")
+                      | Участник системы Reuters
+                  li
+                    a(href="/")
+                      | Ассоциированный участник международных платежных систем VISA International и MasterCard Worldwide

@@ -1,0 +1,33 @@
+main.page-main.main
+  section.section.site-container.disclosure-page
+    .content-container
+      h1.content-container__heading Раскрытие информации для регулятивных целей
+      .content-body.js-tab-container.mod-mobile-transparent
+        .mobile-accordion.js-accordion-mobile
+          button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+            span.mobile-accordion__btn-name Условия и сроки выпуска (привлечения) инструментов капитала
+            +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+          .mobile-accordion__body.js-accordion-mobile-body-wrapper
+            ul.file__list
+              li.file__item
+                +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+              li.file__item
+                +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+        .mobile-accordion.js-accordion-mobile
+          button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+            span.mobile-accordion__btn-name Информация о принимаемых рисках
+            +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+          .mobile-accordion__body.js-accordion-mobile-body-wrapper
+            .tabs__nav
+              button.button-reset.tab__btn.is-active.js-tab-btn 2018
+              button.button-reset.tab__btn.js-tab-btn 2019
+              button.button-reset.tab__btn.js-tab-btn 2020
+            ul.file__list.tab__content.is-active.js-tab-content
+              li.file__item
+                +file("Информация о принимаемых рисках, процедурах их оценки, управления рисками и капиталом за 1 квартал 2018 г.", "Размещён 28.05.2018", "/")
+            ul.file__list.tab__content.js-tab-content
+              li.file__item
+                +file("Информация о принимаемых рисках, процедурах их оценки, управления рисками и капиталом за 3 квартал 2019 г.", "Размещён 15.08.2019", "/")
+            ul.file__list.tab__content.js-tab-content
+              li.file__item
+                +file("Информация о принимаемых рисках, процедурах их оценки, управления рисками и капиталом за 3 квартал 2020 г.", "Размещён 07.05.2021", "/")

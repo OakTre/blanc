@@ -191,3 +191,20 @@ button:focus {
   margin: -2rem;
   padding: 2rem;
 }
+
+._mobile {
+  @include mq(sm, min) {
+    display: none !important;
+  }
+}
+
+._desctop {
+  @include mq(sm, max) {
+    display: none !important;
+  }
+}
+
+
+.js-accordion-mobile-body-wrapper {
+  overflow: hidden;
+}

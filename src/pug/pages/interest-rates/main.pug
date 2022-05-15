@@ -1,0 +1,9 @@
+main.page-main.main
+  section.section.site-container
+    .content-container
+      h1.content-container__heading Информация о процентных ставках по договорам банковского вклада с физическими лицами
+      .content-body.js-tab-container
+        ul.file__list
+          - for (let i = 0; i<8; i++)
+            li.file__item
+              +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")

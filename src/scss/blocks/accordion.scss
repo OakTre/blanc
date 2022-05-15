@@ -5,7 +5,7 @@
 
   width: 100%;
   padding-bottom: 2rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid var(--border-color);
 
   &:nth-last-of-type(1) {
@@ -27,6 +27,17 @@
     &.is-active {
       .accordion__icon {
         transform: rotate(180deg);
+      }
+    }
+
+    &.mod-small {
+      .accordion__name {
+        font: var(--font-text-L);
+        color: var(--color-base-grey);
+      }
+
+      .accordion__icon {
+        fill: var(--color-base-grey);
       }
     }
   }
@@ -53,5 +64,82 @@
 
   &__body {
     padding-top: 2rem;
+
+    p {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.mobile-accordion {
+  margin-top: 3.2rem;
+
+  &:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  @include mq(sm) {
+    margin-top: 1.2rem;
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+
+    &.is-active {
+      .mobile-accordion__icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    @include mq(sm) {
+      align-items: flex-start;
+    }
+  }
+
+  &__btn-name {
+    display: block;
+    font: var(--font-text-L);
+    max-width: calc(100% - 3.2rem);
+
+    @include mq(sm) {
+      line-height: 1;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: var(--color-base-dark);
+    flex-shrink: 0;
+    transition: transform var(--transition);
+    display: none;
+
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &__body {
+    overflow: hidden;
+    padding-top: 3.2rem;
+
+    @include mq(sm) {
+      padding-top: 1.2rem;
+    }
   }
 }
