@@ -1,0 +1,50 @@
+main.page-main.main
+  section.section.site-container.contacts-page
+    .content-container
+      h1.content-container__heading Контакты Бланка
+      .content-body.js-tab-container.mod-mobile-transparent
+        .mobile-accordion.js-accordion-mobile
+          button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+            span.mobile-accordion__btn-name Основные
+            +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+          .js-accordion-mobile-body-wrapper
+            .mobile-accordion__body
+            table
+              tr
+                td
+                  span
+                    | Юридический адрес
+                td 119048, г. Москва, ул. Усачёва, д. 35, стр. 1
+              tr
+                td
+                  span
+                    | Телефон по России
+                td
+                  a(href="/") 8 (800) 770 08-70
+              tr
+                td
+                  span
+                    | Мессенджер
+                td
+                  .btn-link-wrapper
+                    a(href="tel:+79031211188") +7 (903) 121 11-88
+                    a.btn-link(href="/") Написать в Вотсап
+        .mobile-accordion.js-accordion-mobile
+          button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+            span.mobile-accordion__btn-name Время работы
+            +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+          .js-accordion-mobile-body-wrapper
+            .mobile-accordion__body
+              table
+                tr
+                  td
+                    span
+                      | Операционное обслуживание клиентов
+                  td Пн–Пт:  9:00–18:00
+                tr
+                  td
+                    span
+                      | Приём расчётных документов в рублях
+                  td
+                    p На счета других банков и срочные платежи: Пн–Чт: 8:30–19:30
+                    p Внутрибанковские платежи: круглосуточно

@@ -1,0 +1,95 @@
+main.page-main.main
+  section.section.site-container.requisites-page
+    .content-container
+      h1.content-container__heading Реквизиты Бланка
+      .content-body.js-tab-container.mod-mobile-transparent
+        .mobile-accordion.js-accordion-mobile
+          button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn._mobile
+            span.mobile-accordion__btn-name Общие реквизиты
+            +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+          .js-accordion-mobile-body-wrapper
+            .mobile-accordion__body
+              table
+                tr
+                  td
+                    span
+                      | Полное фирменное наименование профессионального участника рынка ценных бумаг
+                  td Общество с ограниченной ответственностью «Бланк Банк»
+                tr
+                  td
+                    span
+                      | Сокращённое фирменное наименование профессионального участника рынка ценных бумаг
+                  td ООО «Бланк Банк»
+                tr
+                  td
+                    span
+                      | Сайт Банка
+                  td blanc.ru
+              p Лицензия ЦБ РФ на осуществление банковских операций № 2368 от 1 июня 1993 г.
+        h2._desctop Реквизиты для платежей
+        .tabs__nav._desctop
+          button.button-reset.tab__btn.is-active.js-tab-btn Рубли
+          button.button-reset.tab__btn.js-tab-btn Евро
+          button.button-reset.tab__btn.js-tab-btn Доллар
+          button.button-reset.tab__btn.js-tab-btn Франки
+          button.button-reset.tab__btn.js-tab-btn Юани
+        .tab__content.js-tab-content.is-active
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn._mobile
+              span.mobile-accordion__btn-name Платежи в ₽*
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span БИК
+                    td 044525801
+        .tab__content.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn._mobile
+              span.mobile-accordion__btn-name Платежи в €*
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span БИК
+                    td 044525801
+        .tab__content.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn._mobile
+              span.mobile-accordion__btn-name Платежи в $*
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span БИК
+                    td 044525801
+        .tab__content.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn._mobile
+              span.mobile-accordion__btn-name Платежи в ₣*
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span БИК
+                    td 044525801
+        .tab__content.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn._mobile
+              span.mobile-accordion__btn-name Платежи в ¥*
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span БИК
+                    td 044525801
