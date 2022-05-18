@@ -31,6 +31,14 @@
       span {
         color: var(--color-base-grey);
       }
+
+      a {
+        transition: color var(--transition);
+
+        &:hover {
+          color: rgb(136, 136, 136);
+        }
+      }
     }
   }
 
