@@ -56,7 +56,7 @@
 
   ul {
     li {
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.2rem;
 
       &:last-child {
         margin-bottom: 0;
@@ -67,7 +67,16 @@
       }
 
       a {
-        font: var(--font-text-L);
+        font: var(--font-text-M);
+        transition: color var(--transition);
+
+        &:hover {
+          color: rgb(136, 136, 136);
+        }
+
+        @include mq(sm) {
+          font: 400 1.4rem/2rem var(--main-ff);
+        }
       }
     }
   }

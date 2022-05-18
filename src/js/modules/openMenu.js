@@ -11,11 +11,11 @@ export default () => {
   });
 
   gsap.set(menu, {autoAlpha: 0});
-  gsap.set(menuContainer, {xPercent: 120, opacity: 0});
+  gsap.set(menuContainer, {xPercent: 30, opacity: 0});
 
   timeline
     .to(menu, {autoAlpha: 1, duration: 0.1})
-    .to(menuContainer, {xPercent: 0, opacity: 1, duration: 0.3, ease: "none"}, "-=0.1");
+    .to(menuContainer, {xPercent: 0, opacity: 1, duration: 0.2, ease: "none"}, "-=0.1");
 
   if (!menubtn) return;
 

@@ -17,11 +17,18 @@
   }
 
   display: inline-flex;
-  align-items: flex-start;
+  align-items: center;
   padding: 0.6rem 0.8rem;
+
+  &:hover {
+    .file__info-name {
+      text-decoration: underline;
+    }
+  }
 
   @include mq(sm) {
     padding: 0 0.8rem;
+    align-items: flex-start;
   }
 
   &__icon {
