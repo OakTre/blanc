@@ -4,6 +4,7 @@ import lazyIMages from './modules/lazyIMages';
 import documenReady from './helpers/documenReady';
 import {tabDesctop, tabMobile } from './modules/tabs.js';
 import {accordionDesctop, accordionMobile} from './modules/accordion.js';
+import openMenu from './modules/openMenu.js';
 
 documenReady(() => {
   lazyIMages();
@@ -11,4 +12,5 @@ documenReady(() => {
   tabMobile();
   accordionDesctop();
   accordionMobile();
+  openMenu();
 });

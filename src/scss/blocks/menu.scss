@@ -1,0 +1,74 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+
+  &__container {
+    width: 40%;
+    background-color: rgb(224, 219, 218);
+    padding: calc(var(--header-height) + 1rem) 8rem;
+    overflow: auto;
+
+    @include mq(sm) {
+      width: 100%;
+      padding: calc(var(--header-height) + 1rem) 2rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 4rem;
+    right: 3.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+
+    @include mq(sm) {
+      top: 2rem;
+      right: 1.6rem;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 0.2rem;
+      background-color: var(--color-base-dark);
+      transform: translate(-50%, -50%);
+
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 1.6rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include mq(sm) {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        font: var(--font-text-L);
+      }
+    }
+  }
+}
