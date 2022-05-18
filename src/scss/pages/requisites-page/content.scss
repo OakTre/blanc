@@ -43,6 +43,12 @@
     @include mq(sm, min) {
       padding-top: 0;
     }
+
+    @include mq(sm) {
+      h2 {
+        display: none;
+      }
+    }
   }
 
   @include mq(sm) {

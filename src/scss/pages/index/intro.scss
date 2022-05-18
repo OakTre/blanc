@@ -1,1 +1,29 @@
+.all-clients {
+  .content-container__heading {
+    padding-left: 0;
+  }
 
+  .content-body a:not(.file) + ul {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 3.2rem;
+
+    &:nth-child(1) {
+      margin-bottom: 3.2rem;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  .button-secondary {
+    margin-bottom: 3.2rem;
+
+    @include mq(sm) {
+      margin-bottom: 2rem;
+    }
+  }
+}

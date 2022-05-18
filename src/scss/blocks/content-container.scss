@@ -10,11 +10,13 @@
   &__heading {
     font: var(--font-text-XL-bold);
     margin-bottom: 6rem;
+    padding-left: 4rem;
 
     @include mq(sm) {
       font: var(--font-text-L);
       font-weight: 700;
       margin-bottom: 3.2rem;
+      padding-left: 2rem;
     }
   }
 }
