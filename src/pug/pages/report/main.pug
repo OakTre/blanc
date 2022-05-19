@@ -2,73 +2,89 @@ main.page-main.main
   section.section.site-container.report-page
     .content-container
       h1.content-container__heading Отчётность
-      .content-body.js-tab-container
-        h2 Финансовые показатели
-        p
-          b
-            | Уставной капитал ООО «Бланк банк» составляет 500 000 000 рублей.
-        p
-          | — Решение об уменьшении уставного капитала было принято Единственным участником Инвестиционного Банка «ВЕСТА» (ООО) 24 декабря 2020 года (Решение №24122020/Р).
-        p
-          | — Департаментом допуска и прекращения деятельности финансовых организаций Банка России было принято решение о государственной регистрации Изменений №4 в Устав Инвестиционного Банка «ВЕСТА» (ООО) 18 марта 2021 года.
-        p
-          | — Управлением Федеральной налоговой службы зарегистрировано уменьшение уставного капитала Инвестиционного Банка «ВЕСТА» (ООО) 24 марта 2021 года.
-        .tabs__nav
-          button.button-reset.tab__btn.is-active.js-tab-btn
-            span._mobile РСБУ*
-            span._desctop Российские правила (РСБУ)
-          button.button-reset.tab__btn.js-tab-btn
-            span._mobile МСФО**
-            span._desctop Международные стандарты (МСФО)
+      .content-body.js-tab-container.mod-mobile-transparent
+        .mobile-accordion.js-accordion-mobile
+          button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+            span.mobile-accordion__btn-name Сведения об аудиторе
+            +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+          .js-accordion-mobile-body-wrapper
+            .mobile-accordion__body
+              p
+                | На 2021 год аудитором Банка назначено Акционерное общество «Аудиторско-консультационная группа “Развитие бизнес-систем» (АО АКГ «РБС»), ОГРН 1027739153430.
+              p
+                |АО АКГ «РБС» осуществляет аудиторскую проверку бухгалтерской отчётности Банка, подготовленной в соответствии с требованиями российских стандартов бухгалтерского учёта
+              table
+                tr
+                  td Адрес
+                  td 123242, г. Москва, Кудринский пер., д. 3Б, стр. 2, комната 3
+                tr
+                  td Член саморегулируемой организации аудиторов
+                  td Аудиторская Ассоциация «Содружество», ОРНЗ 11206027697
+                tr
+                  td Аудитор банка
+                  td Акционерное общество «Аудиторско-консультационная группа “Развитие бизнес-систем”(АО АКГ «РБС»)
+        .mobile-accordion.js-accordion-mobile
+          button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+            span.mobile-accordion__btn-name Финансовые показатели
+            +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+          .js-accordion-mobile-body-wrapper
+            .mobile-accordion__body
+              .tabs__nav
+                button.button-reset.tab__btn.is-active.js-tab-btn
+                  span._mobile РСБУ*
+                  span._desctop Российские правила (РСБУ)
+                button.button-reset.tab__btn.js-tab-btn
+                  span._mobile МСФО**
+                  span._desctop Международные стандарты (МСФО)
 
-        .report-page__mobile-container
-          span.report-page__small-legend * Российские правила
-          span.report-page__small-legend ** Междунардные стандарты
-        .tab__content.is-active.js-tab-content
-          ._mobile
-            .tabs-mobile__nav
-              button.button-reset.tab-mobile.js-tab-mobile-btn.is-active 2020
-              button.button-reset.tab-mobile.js-tab-mobile-btn 2019
-            .tab-mobile__content.js-tab-mobile-content.is-active
-              ul.file__list
-                li.file__item
-                  +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
-                p
-                  | Инвестиционный Банк «ВЕСТА» (ООО) информирует, что 29.04.2021 г. Решением Единственного участника Банка ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК» (Решение от 29.04.2021 г. № 29042021/Р) утверждена годовая бухгалтерская (финансовая) отчётность Банка за 2020 г., а также определён способ покрытия убытка, полученного Банком в 2020 г.
-                  span Размещён 06.05.2021
-            .tab-mobile__content.js-tab-mobile-content
-              ul.file__list
-                li.file__item
-                  +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
-          ._desctop
-            ul.accordion__list
-              li.accordion.js-accordion
-                button.accordion__btn.button-reset.js-accordion-btn.mod-small
-                  span.accordion__name 2020
-                  +icon-mono("shevron-down")(class="accordion__icon" width="24" height="24")
-                .js-accordion-body-wrapper.accordion-body-wrapper
-                  .accordion__body
+              .report-page__mobile-container
+                span.report-page__small-legend * Российские правила
+                span.report-page__small-legend ** Междунардные стандарты
+              .tab__content.is-active.js-tab-content
+                ._mobile
+                  .tabs-mobile__nav
+                    button.button-reset.tab-mobile.js-tab-mobile-btn.is-active 2020
+                    button.button-reset.tab-mobile.js-tab-mobile-btn 2019
+                  .tab-mobile__content.js-tab-mobile-content.is-active
                     ul.file__list
                       li.file__item
                         +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
-                    p
-                      | Инвестиционный Банк «ВЕСТА» (ООО) информирует, что 29.04.2021 г. Решением Единственного участника Банка ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК» (Решение от 29.04.2021 г. № 29042021/Р) утверждена годовая бухгалтерская (финансовая) отчётность Банка за 2020 г., а также определён способ покрытия убытка, полученного Банком в 2020 г.
-                      span Размещён 06.05.2021
-              li.accordion.js-accordion
-                button.accordion__btn.button-reset.js-accordion-btn.mod-small
-                  span.accordion__name 2019
-                  +icon-mono("shevron-down")(class="accordion__icon" width="24" height="24")
-                .js-accordion-body-wrapper.accordion-body-wrapper
-                  .accordion__body
+                      p
+                        | Инвестиционный Банк «ВЕСТА» (ООО) информирует, что 29.04.2021 г. Решением Единственного участника Банка ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК» (Решение от 29.04.2021 г. № 29042021/Р) утверждена годовая бухгалтерская (финансовая) отчётность Банка за 2020 г., а также определён способ покрытия убытка, полученного Банком в 2020 г.
+                        span Размещён 06.05.2021
+                  .tab-mobile__content.js-tab-mobile-content
                     ul.file__list
                       li.file__item
                         +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
-                    p
-                      | Инвестиционный Банк «ВЕСТА» (ООО) информирует, что 29.04.2021 г. Решением Единственного участника Банка ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК» (Решение от 29.04.2021 г. № 29042021/Р) утверждена годовая бухгалтерская (финансовая) отчётность Банка за 2020 г., а также определён способ покрытия убытка, полученного Банком в 2020 г.
-                      span Размещён 06.05.2021
-        .tab__content.js-tab-content
-          ul.file__list
-            li.file__item
-              +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
-            li.file__item
-              +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+                ._desctop
+                  ul.accordion__list
+                    li.accordion.js-accordion
+                      button.accordion__btn.button-reset.js-accordion-btn.mod-small
+                        span.accordion__name 2020
+                        +icon-mono("shevron-down")(class="accordion__icon" width="24" height="24")
+                      .js-accordion-body-wrapper.accordion-body-wrapper
+                        .accordion__body
+                          ul.file__list
+                            li.file__item
+                              +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+                          p
+                            | Инвестиционный Банк «ВЕСТА» (ООО) информирует, что 29.04.2021 г. Решением Единственного участника Банка ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК» (Решение от 29.04.2021 г. № 29042021/Р) утверждена годовая бухгалтерская (финансовая) отчётность Банка за 2020 г., а также определён способ покрытия убытка, полученного Банком в 2020 г.
+                            span Размещён 06.05.2021
+                    li.accordion.js-accordion
+                      button.accordion__btn.button-reset.js-accordion-btn.mod-small
+                        span.accordion__name 2019
+                        +icon-mono("shevron-down")(class="accordion__icon" width="24" height="24")
+                      .js-accordion-body-wrapper.accordion-body-wrapper
+                        .accordion__body
+                          ul.file__list
+                            li.file__item
+                              +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+                          p
+                            | Инвестиционный Банк «ВЕСТА» (ООО) информирует, что 29.04.2021 г. Решением Единственного участника Банка ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК» (Решение от 29.04.2021 г. № 29042021/Р) утверждена годовая бухгалтерская (финансовая) отчётность Банка за 2020 г., а также определён способ покрытия убытка, полученного Банком в 2020 г.
+                            span Размещён 06.05.2021
+              .tab__content.js-tab-content
+                ul.file__list
+                  li.file__item
+                    +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+                  li.file__item
+                    +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
