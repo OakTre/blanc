@@ -47,7 +47,7 @@
 
   &__info-name {
     display: block;
-    color: var(--color-base-dark);
+    color: var(--color-base-dark) !important;
     line-height: 2.1rem;
   }
 
