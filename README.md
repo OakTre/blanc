@@ -8,7 +8,8 @@
 4. [Информация о процентных ставках по договорам банковского вклада с физическими лицами](https://oaktre.github.io/blanc/build/interest-rates.html)
 5. [Лицензии и членства в ассоциациях](https://oaktre.github.io/blanc/build/licenses.html)
 6. [Реквизиты Бланка](https://oaktre.github.io/blanc/build/requisites.html)
-6. [Контакты](https://oaktre.github.io/blanc/build/contacts.html)
+7. [Контакты](https://oaktre.github.io/blanc/build/contacts.html)
+8. [Раскрытие информации Банком – профессиональным участником рынка ценных бумаг](https://oaktre.github.io/blanc/build/requisites.html)
 
 
 
