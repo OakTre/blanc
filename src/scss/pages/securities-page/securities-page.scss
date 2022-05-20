@@ -1,0 +1,127 @@
+.securities-page {
+
+  .content-container__heading {
+    @include mq(sm) {
+      padding-left: 0;
+    }
+  }
+
+  .mod-brokers {
+    table {
+      tr {
+        td {
+          width: 50%;
+          max-width: 100% !important;
+
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-mobile {
+    &:not(.is-active) {
+      background-color: var(--color-white);
+    }
+  }
+
+  table {
+    tr {
+      width: auto;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--color-bg);
+
+      &:last-child {
+        padding-bottom: 0;
+        border: none;
+        margin-bottom: 0;
+      }
+
+      td {
+        span {
+          color: var(--color-base-grey);
+        }
+
+        p {
+          @include mq(sm) {
+            padding-bottom: 0;
+            margin-bottom: 1.2rem;
+            border: none;
+          }
+        }
+
+        &:nth-child(1) {
+          max-width: 50.4rem;
+        }
+
+        &:nth-child(2) {
+          max-width: 35.5rem;
+        }
+
+        &:last-child {
+          margin-left: auto;
+          display: inline-block;
+          width: auto;
+
+          @include mq(sm) {
+            margin-left: 0;
+          }
+
+          span {
+            padding: 0.2rem 1.2rem;
+            border-radius: 0.8;
+            background-color: #f8f8f8;
+            line-height: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: stretch;
+    }
+
+    li {
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
+      border: none !important;
+
+      @include mq(sm) {
+        margin-bottom: 1.2rem !important;
+      }
+
+      &:first-child {
+        max-width: 85.9rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        span {
+          padding: 0.2rem 1.2rem;
+          border-radius: 0.8;
+          background-color: #f8f8f8;
+          line-height: 2.1rem;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

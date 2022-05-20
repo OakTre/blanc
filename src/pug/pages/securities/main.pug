@@ -1,0 +1,143 @@
+main.page-main.main
+  section.section.site-container.securities-page
+    .content-container
+      h1.content-container__heading Раскрытие информации Банком – профессиональным участником рынка ценных бумаг
+      .content-body.js-tab-container.mod-mobile-transparent
+        ._mobile
+          .tabs-mobile__nav
+            button.button-reset.tab-mobile.js-tab-mobile-btn.is-active Общая информация
+            button.button-reset.tab-mobile.js-tab-mobile-btn Брокерское обслуживание
+            button.button-reset.tab-mobile.js-tab-mobile-btn Депозитарное обслуживание
+            button.button-reset.tab-mobile.js-tab-mobile-btn Доверительное управление
+
+        ._desctop
+          .tabs__nav
+            button.button-reset.tab__btn.is-active.js-tab-btn Общая информация
+            button.button-reset.tab__btn.js-tab-btn Брокерское обслуживание
+            button.button-reset.tab__btn.js-tab-btn Депозитарное обслуживание
+            button.button-reset.tab__btn.js-tab-btn Доверительное управление
+        .tab__content.js-tab-mobile-content.is-active.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Наименование Банка
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span Полное фирменное наименование профессионального участника рынка ценных бумаг
+                    td
+                      | Общество с ограниченной ответственностью «Бланк Банк»
+                    td
+                      span Размещён 12.07.2021
+                  tr
+                    td
+                      span Сокращенное фирменное наименование профессионального участника рынка ценных бумаг
+                    td
+                      | ООО «Бланк Банк»
+                    td
+                      span Размещён 12.07.2021
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Информация о приостановлении действия, возобновлении действия, аннулировании действия
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                ul
+                  li
+                    | отсутствует
+                  li
+                    span Размещён 12.07.2021
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Финансовая отчетность
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                ul
+                  li
+                    a(href="/")
+                      | Годовая бухгалтерская (финансовая) отчетность, представленная в налоговый орган, и аудиторское заключение по ней
+                  li
+                    span Размещён 12.07.2021
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Перечень организаций, в которых управляющему открыты лицевые счета (счета депо) доверительного управляющего, с указанием полного фирменного наименования организации
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span Небанковская кредитная организация акционерного общества «Национальный расчетный депозитарий»
+                    td
+                      p
+                        | Депозитарный код Банка в НРД – МС01723 00000
+                      p
+                        | Договор счета депо доверительного управляющего от 17.05.2004 №1723/ДМС-0
+                      p
+                        | МD0406100013 – счет для хранения ценных бумаг
+                      p
+                        | HD1212110684 – торговый счет на бирже (НКЦ)
+                      p
+                        | TD 1706210015 – счет для расчетов по внебиржевым операциям (НРД)
+                      p
+                        | Счет доверительного управления
+                      p
+                        | RUB  40701810300000000767, БИК 044525505, к/с 30105810345250000505
+                      p
+                        | USD  40701840600000000767, SWIFT: MICURUMMXXX
+                      p
+                        | EUR  40701978200000000767, SWIFT: MICURUMMXXX
+                    td
+                      span Размещён 12.07.2021
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Архивные документы
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                .file__list
+                  - for (let i = 0; i<2; i++)
+                    .file__item
+                      +file("Правила комплексного обслуживания физических лиц ", "Вступил в силу 25.12.2020", "/")
+
+        .tab__content.js-tab-mobile-content.js-tab-content.mod-brokers
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Банк осуществляет оказание брокерских услуг на основании лицензии ФСФР на осуществление брокерской деятельности № 077-09958-100000 от 13.02.2007 г. без ограничения срока действия
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+                table
+                  tr
+                    td
+                      span Адрес
+                    td
+                      | 119048, г. Москва, ул. Усачёва, д. 35, стр. 1. Метро Спортивная,
+                      br
+                      | выход №1 (первый вагон из центра) к спорткомплексу Лужники.
+                      br
+                      | Вход со стороны Проектируемого проезда №2309
+                  tr
+                    td
+                      span Время работы
+                    td
+                      | Пн–Чт: 9:00–18:00
+                      br
+                      | Пт: 9:00–16:45
+        .tab__content.js-tab-mobile-content.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Депозитарное обслуживание
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
+        .tab__content.js-tab-mobile-content.js-tab-content
+          .mobile-accordion.js-accordion-mobile
+            button.button-reset.mobile-accordion__btn.js-accordion-mobile-btn
+              span.mobile-accordion__btn-name Доверительное управление
+              +icon-mono("shevron-down")(class="mobile-accordion__icon" width="24" height="24")
+            .js-accordion-mobile-body-wrapper
+              .mobile-accordion__body
